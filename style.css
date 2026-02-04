@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+    --primary-color: #F97316; /* Orange */
+    --secondary-color: #1E293B; /* Slate 800 */
+    --background-color: #F8FAFC;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --text-color: #0F172A;
+}
+
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.stButton>button {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    border: none !important;
+    padding: 0.75rem 2rem !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    width: 100% !important;
+    box-shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.2), 0 2px 4px -1px rgba(249, 115, 22, 0.1) !important;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.3) !important;
+}
+
+.stForm {
+    background: var(--card-bg) !important;
+    backdrop-filter: blur(12px) !important;
+    border-radius: 24px !important;
+    padding: 2.5rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02) !important;
+}
+
+h1, h2, h3 {
+    color: var(--secondary-color) !important;
+    font-weight: 800 !important;
+}
+
+.stTextInput>div>div>input, .stSelectbox>div>div>div, .stNumberInput>div>div>input {
+    border-radius: 10px !important;
+    border: 1px solid #E2E8F0 !important;
+}
+
+.stSuccess {
+    background-color: #DCFCE7 !important;
+    color: #166534 !important;
+    border-radius: 12px !important;
+    border: none !important;
+}
+
+/* Custom card effect for products */
+.product-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #F1F5F9;
+    text-align: center;
+    margin-bottom: 1rem;
+}
